@@ -251,6 +251,13 @@ textarea{
 }
 
 @media screen and (max-width:599px) {
+     #infosport{
+        min-height:84px ;
+    }
+    
+    .gallery{
+        height: 82px;
+    }
     .container{
         width:100%;
     }
