@@ -251,6 +251,9 @@ textarea{
 }
 
 @media screen and (max-width:599px) {
+    .container{
+        width:100%;
+    }
     .btn{
         display:block;
         
