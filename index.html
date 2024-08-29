@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expertprediction</title>
+    <link rel="stylesheet" href="flexbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   <script>
+    
+     function voir() {
+        document.getElementById("appelle").innerHTML="Psg vs Dortmund<br>Victoire nul Psg<br> <br>Real madrid vs Bayern<br>Total but 2.5"; 
+
+     }
+     function myFunction() {
+  let x = document.querySelector(".nav2,.Menu2");
+  
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function verificationmail() {
+  let email=document.querySelector("#email")
+  let emailvalue=email.value;
+  let veri=/^[A-Za-z]{1,9}[0-99]{1,}[@]{1}gmail.com$/
+  let er=document.querySelector("#erreur")
+  if(!veri.test(emailvalue)){
+    er.innerHTML="email incorrect"
+  }
+  else{
+    er.innerHTML="";
+  }
+}
+     
+     
+       
+
+   </script>
+</head>
+<body>
+    <div id="bar">
+       <div class="imag">
+      <a href=""><img src="image/cd17a6c0e199af2049046701c6143b5a-removebg-preview.png" alt=""></a>
+       </div>
+       <nav>
+        <a href="" class="ligne">Accueil</a>
+        <a href="#infosport" class="ligne">Infosport</a>
+        <a href="#coupondujours">Coupon du jours</a>
+        <a href="#contacteznous">Contactez Nous</a>
+        <button class="btn" onclick="myFunction()" ><i class="fa-solid fa-bars"></i></button>
+       
+      </nav>
+       
+    </div>
+    <div class="Menu2">
+        <nav class="nav2">
+            <a href="" class="ligne">Accueil</a>
+            <a href="#infosport" class="ligne">Infosport</a>
+            <a href="#coupondujours">Coupon du jours</a>
+            <a href="#contacteznous">Contactez Nous</a>
+
+        </nav>
+    </div>
+   
+   <div id="couverturevideo">
+        
+    <img src="image/top-5-pronostics-foot.jpg" alt="">
+        
+    </div><br>
+    <section id="infosport">
+        <div class="gallery">
+            <img src="image/Kylian-Mbappe-PSG-750x368.webp" alt="">
+           
+        </div>
+        <div class="gallery">
+            <img src="image/halland.webp" alt="">
+           
+        </div>
+        <div class="gallery">
+            <img src="image/Didier-Deschamps-750x368.webp" alt="">
+          
+        </div>
+        <div class="gallery">
+            <img src="image/Ethan-Mbappe-4-750x368.webp" alt="">
+           
+        </div>
+        </section>
+        <section id="coupondujours">
+          
+          <button id="appelle" onclick="voir()">Voir le Coupon</button>
+            
+
+        </section>
+   
+   
+   <section id="contacteznous"><br>
+    <h1>CONTACT</h1>
+    <div class="container">
+        <form class="formulaire"><br>
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" placeholder="Entrer votre nom" required><br>
+            <label for="prenom">Prenom :</label>
+            <input type="text" name="prenom" placeholder="Entrer votre prénom" required><br>
+            <label for="email">Email :</label>
+            <p id="erreur" style="color:red"></p>
+            <input onkeyup="verificationmail()" type="email" name="email" id="email" placeholder="exemple@mail.com" required><br>
+            <label for="sujet">Sujet :</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea><br>
+            <button type="button" onclick="verificationmail()">Envoyer</button>
+        
+       </form>
+         
+      </div>
+     </section>
+    <footer id="footer">
+    <div class="logo">
+      <a href=""><img src="image/cd17a6c0e199af2049046701c6143b5a-removebg-preview.png" alt=""></a>
+       </div>
+       
+      
+</footer>
+<div id="bar1"></div>
+      
+    
+</body>
+</html>

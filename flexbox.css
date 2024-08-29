@@ -1,0 +1,321 @@
+*{
+    padding:0 ;
+    margin: 0;
+    font-family:sans-serif ;
+   box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+#bar{
+    background:black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center ;
+    height: 50px;
+    box-shadow:0 0 7px 14px rgb(229, 12, 12); 
+    
+    
+    
+
+}
+nav a {
+    text-decoration: none;
+    color:white ;
+    padding:10px ;
+    
+    
+}
+
+
+nav a:hover{
+   background:rgb(229, 12, 12);;
+   border-radius:20px ;
+   
+   
+   
+}
+.btn{
+    border:none;
+    font-size:1.5em ;
+    margin-right:10px ;
+    width:50px ;
+    color:rgb(229, 12, 12); ;
+    background:black;
+    display:none ;
+    
+}
+.imag{
+    
+    height:36px ;
+    width:50px ;
+   
+}
+.imag img{
+    width:50px ;
+    height:36px ;
+    object-fit: cover;
+    
+}
+#couverturevideo{
+    width:100% ;
+    height:400px ;
+    background:rgba(0, 0, 0, 0.363);
+   
+}
+#couverturevideo img{
+    width:100% ;
+    height:400px ;
+    object-fit: cover;
+}
+
+
+    
+
+    
+   
+
+
+#infosport{
+    width:100% ;
+    min-height:142px;
+    display: flex;
+    gap:5px ;
+  
+    
+}
+
+
+
+
+.gallery p {
+    color:white ;
+    text-align: center;
+
+}
+.gallery{
+    width:100% ;
+    height:150px ;
+    border-radius:20px ;
+    transition:transform 2.s ;
+    
+    
+
+}
+.gallery :hover{
+    transform:scale(1.2);
+    
+}
+.gallery img{
+    width:100% ;
+    border-radius:20px ;
+    object-fit: cover;
+  transition: transform  2.s;
+}
+
+#coupondujours{
+    width:100% ;
+    height:430px ;
+    background:black;
+    margin-top:10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('image/ddier1.png');
+    background-position: 40% 0%;
+   
+}
+
+#coupondujours img{
+    width: 100%;
+    height:430px ;
+    object-fit: cover;
+    object-position: top;
+    
+}
+ #appelle{
+  
+   padding:20px ;
+   font-size:2em ;
+   border-radius:20px ;
+   text-shadow:0 0 7px turquoise ;
+   font-weight: bolder;
+   color:white ;
+   background:red ;
+   
+   
+}
+#appelle:hover{
+    background: rgb(229, 12, 12);
+}
+
+#contacteznous{
+  width:100% ;
+   height:495px ;
+   background:black;
+   margin-top:10px ;
+   
+   
+}
+#contacteznous h1{
+    text-align: center;
+    color:white ;
+}
+.container{
+    width:400px ;
+    height:444px ;
+    background:rgba(0, 0, 0, 0.632);
+    border-radius:20px ;
+    margin: auto;
+    box-shadow:1px 1px 18px 4px rgb(229, 12, 12);;
+   
+    
+}
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label {
+    font-weight: bolder;
+    color:white ;
+}
+input{
+    width:50% ;
+    border-radius:20px ;
+    text-align: center;
+    height:30px ;
+}
+textarea{
+    border-radius:10px ;
+    resize: none;
+}
+.container button{
+    font-weight: bolder;
+    width:80px ;
+}
+.container button:hover{
+    background:rgb(229, 12, 12);
+}
+#footer{
+    width: 100%;
+    height:50px ;
+    background:black ;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow:0 0 17px 7px rgb(229, 12, 12);
+   
+    
+   
+}
+.logo{
+    width: 36px;
+    height:50px ;
+}
+.logo img{
+    width:36px ;   
+    height:50px ;
+    object-fit: cover;
+   
+}
+
+#bar1{
+    border:1px solid rgb(229, 12, 12); ;
+}
+.Menu2{
+    height:160px ;
+    width:100% ;
+    background:black ;
+    display: flex;
+    justify-content: center;
+    display:none ;
+    
+    
+   
+}
+.nav2{
+    display: flex;
+    flex-direction:column ;
+   display:none ;
+   
+  
+}
+.ligne{
+    text-align: center;
+}
+
+@media screen and (max-width:599px) {
+    .btn{
+        display:block;
+        
+  }
+  .Menu2{
+    display: block;
+  }
+  .nav2{
+    display: block;
+  }
+  .nav2 a{
+    display: block;
+    text-align: center;
+  }
+    nav a {
+        display: none;
+    }
+   
+    
+    
+    
+   
+   
+  
+   
+    
+    
+
+        
+        
+    }
+
+
+@media screen and (max-width:1089px){
+    #appelle{
+      
+        width:282px ;
+       
+
+    }
+}
+@media screen and (max-width:455px){
+    #coupondujours{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 72% 0% !important;
+    }
+    #appelle{
+        
+        width:282px ;
+       
+
+    }
+}
+    @media screen and (max-width:387px){
+        #appelle{
+           
+            width:282px;
+            
+} 
+}
+
+
+
+   
+    
+    
+
